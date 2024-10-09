@@ -20,7 +20,7 @@ on:
       - ready_for_review
 
 env:
-  DOCKER_HUB_REPO: bxyxbxb/portainer-ce
+  DOCKER_HUB_REPO: bxyxbxb/portainer-zh
   EXTENSION_HUB_REPO: portainerci/portainer-docker-extension
   NODE_VERSION: 18.x
 
