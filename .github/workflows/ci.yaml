@@ -74,6 +74,10 @@ jobs:
             # use pr${{ github.event.number }} as the tag for pull requests
             # for instance, pr123
             CONTAINER_IMAGE_TAG="pr${{ github.event.number }}"
+          elif [ "${GITHUB_REF_NAME}" == "main" ]; then
+            # use pr${{ github.event.number }} as the tag for pull requests
+            # for instance, pr123
+            CONTAINER_IMAGE_TAG="latest"
           else
             # replace / with - in the branch name
             # for instance, feature/1.0.0 -> feature-1.0.0
