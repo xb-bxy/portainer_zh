@@ -1,0 +1,1710 @@
+{
+  "name": "Name",
+  "initAdmin": {
+    "portainer": "Portainer",
+    "new_installation": "New Portainer installation",
+    "create_initial_user": "Please create the initial administrator user.",
+    "username": "Username",
+    "username_placeholder": "e.g. admin",
+    "password": "Password",
+    "confirm_password": "Confirm password",
+    "password_requirements": "The password must be at least",
+    "characters_long": "characters long.",
+    "create_user": "Create user",
+    "creating_user": "Creating user...",
+    "allow_anonymous_statistics": "Allow collection of anonymous statistics. You can find more information about this in our privacy policy.",
+    "restore_from_backup": "Restore Portainer from backup",
+    "restore_metadata_info": "This will restore the Portainer metadata which contains information about the environments, stacks and applications, as well as the configured users.",
+    "upload_backup_info": "You can upload a backup file from your computer.",
+    "select_file": "Select file",
+    "backup_password_tooltip": "If the backup is password protected, provide the password in order to extract the backup file, otherwise this field can be left empty.",
+    "access_key_id": "Access key ID",
+    "secret_access_key": "Secret access key",
+    "region": "Region",
+    "region_placeholder": "default region is us-east-1 if left empty",
+    "bucket_name": "Bucket name",
+    "s3_compatible_host": "S3 Compatible Host",
+    "s3_compatible_host_tooltip": "Hostname of a S3 service",
+    "s3_compatible_host_placeholder": "leave empty for AWS S3",
+    "filename": "Filename",
+    "restore_note_1": "You are about to restore Portainer from this backup.",
+    "restore_note_2": "After restoring has completed, please log in as a user that was known by the Portainer that was restored.",
+    "restore_portainer": "Restore Portainer",
+    "restoring_portainer": "Restoring Portainer..."
+  },
+  "homeView": {
+    "quickSetup": "Quick Setup",
+    "environmentWizard": "Environment Wizard",
+    "welcomeToPortainer": "Welcome to Portainer",
+    "localEnvironmentConnected": "We have connected your local environment of {{type}} to Portainer.",
+    "localEnvironmentNotConnected": "We could not connect your local environment to Portainer.",
+    "ensureEnvironmentExposed": "Please ensure your environment is correctly exposed. For help with installation visit",
+    "getStartedBelow": "Get started below with your local Portainer or connect more container environments.",
+    "getStarted": "Get Started",
+    "proceedUsingLocalEnvironment": "Proceed using the local environment which Portainer is running in",
+    "addEnvironments": "Add Environments",
+    "connectOtherEnvironments": "Connect to other environments",
+    "docker": "Docker",
+    "dockerAgent": "Docker Agent",
+    "kubernetes": "Kubernetes"
+  },
+  "environmentTypeSelectView": {
+    "quickSetup": "Quick Setup",
+    "environmentWizard": "Environment Wizard",
+    "selectEnvironment": "Select your environment(s)",
+    "onboardDifferentEnvironments": "You can onboard different types of environments, select all that apply.",
+    "connectExistingEnvironments": "Connect to existing environments",
+    "setUpNewEnvironments": "Set up new environments",
+    "startWizard": "Start Wizard"
+  },
+  "newUserForm": {
+    "addNewUser": "Add a new user",
+    "userCreatedSuccess": "User successfully created",
+    "createUser": "Create user",
+    "creatingUser": "Creating user...",
+    "createUserError": "Unable to create user"
+  },
+  "adminSwitch": {
+    "label": "Administrator",
+    "tooltip": "Administrators have access to Portainer settings management as well as full control over all defined environments and their resources."
+  },
+  "confirmPasswordField": {
+    "label": "Confirm password"
+  },
+  "teamsField": {
+    "label": "Add to team(s)",
+    "noTeamsMessage": "You don't seem to have any teams to add users into. Head over to the",
+    "teamsViewLink": "Teams view",
+    "noTeamsMessageEnd": "to create some."
+  },
+  "teamsFieldset": {
+    "teamSyncMessage": "The team leader feature is disabled as external authentication is currently enabled with team sync.",
+    "noTeamSelectedMessage": "Note: non-administrator users who aren't in a team don't have access to any environments by default. Head over to the",
+    "environmentsViewLink": "Environments view",
+    "noTeamSelectedMessageEnd": "to manage their accesses."
+  },
+  "usernameField": {
+    "label": "Username",
+    "ldapTooltip": "Username must exactly match username defined in external LDAP source.",
+    "placeholder": "e.g. jdoe"
+  },
+  "validation": {
+    "usernameRequired": "Username is required",
+    "usernameTaken": "Username is already taken",
+    "passwordRequired": "Password is required",
+    "passwordMinLength": "The password must be at least {{min}} characters long. ({{current}}/{{min}})",
+    "passwordsMustMatch": "Passwords must match",
+    "required": "This field is required",
+    "invalidUrl": "Invalid URL",
+    "mustBeNumber": "Must be a number",
+    "cronRuleRequired": "This field is required.",
+    "invalidCronRule": "Please enter a valid cron rule.",
+    "accessKeyRequired": "This field is required.",
+    "secretAccessKeyRequired": "This field is required.",
+    "bucketNameRequired": "This field is required.",
+    "s3HostInvalid": "S3 host must begin with http:// or https://.",
+    "environmentUrl": {
+      "invalid": "Environment address must be of the form <IP>:<PORT> or <HOST>:<PORT>."
+    }
+  },
+  "passwordField": {
+    "label": "Password"
+  },
+  "usersDatatable": {
+    "columns": {
+      "authentication": "Authentication",
+      "name": "Name",
+      "role": "Role",
+      "teamLeaderSuffix": " - team leader"
+    },
+    "title": "Users",
+    "deleteConfirmMessage": "Do you want to remove the selected users? They will not be able to login into Portainer anymore.",
+    "deleteSuccess": "Teams successfully removed"
+  },
+  "editor": {
+    "ctrlFStartSearching": "Ctrl+F - Start searching",
+    "ctrlGFindNext": "Ctrl+G - Find next",
+    "ctrlShiftGFindPrevious": "Ctrl+Shift+G - Find previous",
+    "ctrlShiftFReplace": "Ctrl+Shift+F - Replace",
+    "ctrlShiftRReplaceAll": "Ctrl+Shift+R - Replace all",
+    "altGJumpToLine": "Alt+G - Jump to line",
+    "persistentSearch": "Persistent search:",
+    "enterFindNext": "Enter - Find next",
+    "shiftEnterFindPrevious": "Shift+Enter - Find previous",
+    "ctrlFForSearch": "Ctrl+F for search",
+    "cmdFStartSearching": "Cmd+F - Start searching",
+    "cmdGFindNext": "Cmd+G - Find next",
+    "cmdShiftGFindPrevious": "Cmd+Shift+G - Find previous",
+    "cmdOptionFReplace": "Cmd+Option+F - Replace",
+    "cmdOptionRReplaceAll": "Cmd+Option+R - Replace all",
+    "optionGJumpToLine": "Option+G - Jump to line",
+    "cmdFForSearch": "Cmd+F for search",
+    "webEditor": "Web editor",
+    "editor": "Editor"
+  },
+  "confirm": {
+    "areYouSure": "Are you sure?",
+    "unsavedChanges": "You currently have unsaved changes in the text editor. Are you sure you want to leave?",
+    "yes": "Yes"
+  },
+  "createTeamForm": {
+    "addNewTeam": "Add a new team",
+    "nameLabel": "Name",
+    "namePlaceholder": "e.g. development",
+    "selectTeamLeaders": "Select team leader(s)",
+    "teamLeaderTooltip": "You can assign one or more leaders to this team. Team leaders can manage their team's users and resources.",
+    "selectTeamLeaderPlaceholder": "Select one or more team leaders",
+    "teamSyncDisabled": "The team leader feature is disabled as external authentication is currently enabled with team sync.",
+    "creatingTeam": "Creating team...",
+    "createTeamButton": "Create team",
+    "teamAddedSuccess": "Team successfully added"
+  },
+  "teamsDatatable": {
+    "title": "Teams",
+    "deleteConfirmMessage": "Are you sure you want to remove the selected teams?",
+    "teamRemoveSuccess": "Teams successfully removed",
+    "teamRemoveFailure": {
+      "title": "Failure",
+      "message": "Unable to remove team"
+    }
+  },
+  "environmentGroups": {
+    "title": "Environment Groups",
+    "breadcrumb": "Environment group management",
+    "columns": {
+      "name": "Name",
+      "actions": "Actions"
+    },
+    "actions": {
+      "manageAccess": "Manage access",
+      "confirmRemove": "Are you sure you want to remove the selected environment group(s)?",
+      "addGroup": "Add group",
+      "removeSuccess": "Environment Group(s) removed",
+      "deleteFailed": "Failed to delete environment groups",
+      "deleteFailedSingle": "Unable to delete environment group"
+    }
+  },
+  "activity_logs": {
+    "title": "Activity logs",
+    "time": "Time",
+    "user": "User",
+    "environment": "Environment",
+    "action": "Action",
+    "payload": "Payload",
+    "inspect": "Inspect",
+    "user_activity_logs": "User activity logs",
+    "max_retention_info": "Portainer user activity logs have a maximum retention of 7 days.",
+    "export_csv": "Export as CSV",
+    "export_csv_error": "Failed loading user activity logs csv"
+  },
+  "authentication_logs": {
+    "title": "Authentication events",
+    "time": "Time",
+    "origin": "Origin",
+    "context": "Context",
+    "user": "User",
+    "result": "Result",
+    "filter": "Filter",
+    "auth_success": "Authentication success",
+    "auth_failure": "Authentication failure",
+    "logout": "Logout"
+  },
+  "date_range_picker": {
+    "label": "Date range"
+  },
+  "notifications": {
+    "breadcrumb": "Notifications",
+    "title": "Notifications",
+    "type": "Type",
+    "time": "Time",
+    "details": "Details",
+    "delete_confirm": "Are you sure you want to remove the selected notifications?"
+  },
+  "application_settings": {
+    "title": "Application settings",
+    "success": "Success",
+    "updated": "Application settings updated",
+    "snapshot_interval": "Snapshot interval",
+    "snapshot_interval_placeholder": "e.g. 15m",
+    "edge_poll_frequency": "Edge agent default poll frequency",
+    "saving": "Saving...",
+    "save": "Save application settings",
+    "telemetry_label": "Allow the collection of anonymous statistics",
+    "telemetry_info": "You can find more information about this in our",
+    "privacy_policy": "privacy policy",
+    "use_custom_logo": "Use custom logo",
+    "logo_info": "You can specify the URL to your logo here. For an optimal display, logo dimensions should be 155px by 55px.",
+    "logo_url": "URL",
+    "logo_url_placeholder": "https://mycompany.com/logo.png",
+    "login_banner": "Login screen banner",
+    "login_banner_info": "You can set a custom banner that will be shown to all users during login.",
+    "banner_details": "Details",
+    "banner_details_placeholder": "Banner details",
+    "app_templates": "App Templates",
+    "app_templates_info": "You can specify the URL to your own template definitions file here. See",
+    "portainer_documentation": "Portainer documentation",
+    "for_more_details": "for more details.",
+    "default_value": "The default value is",
+    "url": "URL",
+    "edgeAgentCheckinInterval": "Edge agent check-in interval is required",
+    "loginBannerRequired": "Login banner is required when enabled",
+    "logoUrlRequired": "Logo URL is required when enabled",
+    "snapshotIntervalRequired": "Snapshot interval is required",
+    "validUrl": "Must be a valid URL"
+  },
+  "edgeCheckinInterval": {
+    "label": "Poll frequency",
+    "tooltip": "Interval used by this Edge agent to check in with the Portainer instance. Affects Edge environment management and Edge compute features.",
+    "defaultInterval": "Use default interval",
+    "seconds": "{{count}} seconds",
+    "minutes": "{{count}} minutes",
+    "hours": "{{count}} hours",
+    "days": "{{count}} days"
+  },
+  "associatedEdgeEnvironmentsSelector": {
+    "info": "You can select which environment should be part of this group by moving them to the associated environments table. Simply click on any environment entry to move it from one table to the other.",
+    "availableEnvironments": "Available environments",
+    "associatedEnvironments": "Associated environments"
+  },
+  "edgeForm": {
+    "pingIntervalLabel": "Ping interval",
+    "pingIntervalTooltip": "Interval used by this Edge agent to check in with the Portainer instance",
+    "snapshotIntervalLabel": "Snapshot interval",
+    "snapshotIntervalTooltip": "Interval used by this Edge agent to snapshot the agent state",
+    "commandIntervalLabel": "Command interval",
+    "commandIntervalTooltip": "Interval used by this Edge agent to fetch commands from the Portainer instance",
+    "defaultInterval": "Use default interval",
+    "disabled": "{{count}}",
+    "minutes": "{{count}} minutes",
+    "hour": "{{count}} hour",
+    "day": "{{count}} day",
+    "week": "{{count}} week"
+  },
+  "auth_style_field": {
+    "label": "Auth Style",
+    "tooltip": "Auth Style specifies how the endpoint wants the client ID & client secret sent.",
+    "options": {
+      "autoDetect": "Auto Detect",
+      "inParams": "In Params",
+      "inHeader": "In Header"
+    }
+  },
+  "edge_compute_settings": {
+    "title": "Edge Compute settings",
+    "enable_features": "Enable Edge Compute features",
+    "enable_tip": "Enable this setting to use Portainer Edge Compute capabilities.",
+    "portainer_url_tooltip": "URL of this Portainer instance that will be used by Edge agents to initiate the communications.",
+    "enforce_edge_id": "Enforce use of Portainer generated Edge ID",
+    "enforce_edge_id_tooltip": "This setting only applies to manually created environments.",
+    "saving": "Saving settings...",
+    "save": "Save settings"
+  },
+  "deployment_sync_options": {
+    "title": "Deployment sync options",
+    "default_values_tip": "Default values set here will be available to choose as an option for edge environment creation",
+    "checkin_intervals": "Check-in Intervals",
+    "default_poll_frequency": "Edge agent default poll frequency",
+    "default_poll_frequency_tooltip": "Interval used by default by each Edge agent to check in with the Portainer instance. Affects Edge environment management and Edge compute features.",
+    "async_checkin_intervals": "Async Check-in Intervals",
+    "edge_agent_ping_frequency": "Edge agent default ping frequency",
+    "edge_agent_ping_frequency_tooltip": "Interval used by default by each Edge agent to ping the Portainer instance. Affects Edge environment management and Edge compute features.",
+    "edge_agent_snapshot_frequency": "Edge agent default snapshot frequency",
+    "edge_agent_snapshot_frequency_tooltip": "Interval used by default by each Edge agent to snapshot the agent state.",
+    "edge_agent_command_frequency": "Edge agent default command frequency",
+    "edge_agent_command_frequency_tooltip": "Interval used by default by each Edge agent to execute commands.",
+    "saving": "Saving settings...",
+    "save": "Save settings",
+    "success_title": "Success",
+    "success_message": "Settings updated successfully"
+  },
+  "settings_open_amt": {
+    "title": "Intel OpenAMT",
+    "enable_label": "Enable OpenAMT",
+    "enable_tip": "When enabled, this will allow Portainer to interact with an OpenAMT MPS API.",
+    "mps_server": "MPS Server",
+    "mps_server_placeholder": "Enter the MPS Server",
+    "mps_user": "MPS User",
+    "mps_user_placeholder": "Enter the MPS User",
+    "mps_password": "MPS Password",
+    "mps_password_placeholder": "Enter the MPS Password",
+    "mps_password_tooltip": "Needs to be 8-32 characters including one uppercase, one lowercase letter, one base-10 digit, and one special character.",
+    "domain_name": "Domain Name",
+    "domain_name_placeholder": "Enter the Domain Name",
+    "domain_name_tooltip": "Enter the FQDN associated with the provisioning certificate (e.g., amtdomain.com).",
+    "certificate_file": "Provisioning Certificate File (.pfx)",
+    "certificate_file_tooltip": "Supported CAs are Comodo, DigiCert, Entrust, and GoDaddy. The certificate must contain the private key. On AMT 15-based devices, you need to use SHA2.",
+    "upload_file": "Upload file",
+    "certificate_password": "Provisioning Certificate Password",
+    "certificate_password_tooltip": "Needs to be 8-32 characters including one uppercase, one lowercase letter, one base-10 digit, and one special character.",
+    "certificate_password_placeholder": "**********",
+    "saving": "Saving settings...",
+    "save": "Save settings"
+  },
+  "internal_auth": {
+    "allow_weak_passwords_title": "Allow weak passwords?",
+    "allow_weak_passwords_message": "You have set an insecure minimum password length. This could leave your system vulnerable to attack, are you sure?",
+    "information_title": "Information",
+    "information_description": "When using internal authentication, Portainer will encrypt user passwords and store credentials locally.",
+    "password_rules_title": "Password rules",
+    "password_rules_description": "Define minimum length for user-generated passwords."
+  },
+  "common": {
+    "yes": "Yes"
+  },
+  "no_environments_info_panel": {
+    "information": "Information",
+    "no_env_admin": "No environment available for management. Please head over the",
+    "environment_wizard": "environment wizard",
+    "to_add_env": "to add an environment.",
+    "no_access": "You do not have access to any environment. Please contact your administrator."
+  },
+  "application_settings_widget": {
+    "title": "Application settings"
+  },
+  "application_settings_form": {
+    "caching_tip": "Enabling front-end data caching can mean that changes to Kubernetes clusters made by other users or outside of Portainer may take up to five minutes to show in your session. This caching only applies to Kubernetes environments.",
+    "enable_caching_label": "Enable front-end data caching for Kubernetes environments",
+    "saving": "Saving...",
+    "save_button": "Save",
+    "success_title": "Success",
+    "success_message": "Successfully updated application settings.",
+    "error_message": "Unable to update application settings"
+  },
+  "access_tokens": {
+    "title": "Access tokens",
+    "columns": {
+      "description": "Description",
+      "prefix": "Prefix",
+      "created": "Created",
+      "last_used": "Last Used"
+    },
+    "table_actions": {
+      "confirm_delete": "Do you want to remove the selected access token(s)? Any script or application using these tokens will no longer be able to invoke the Portainer API.",
+      "add_button": "Add access token",
+      "success_title": "Success",
+      "success_message": "Access token(s) removed"
+    },
+    "delete_failed": "Failed to delete access tokens",
+    "unable_to_delete": "Unable to delete access token"
+  },
+  "helm_repository": {
+    "repository": "repository",
+    "repositories": "repositories",
+    "add": "Add Helm repository",
+    "title": "Helm repositories",
+
+    "user_description": "Adding a Helm repo here only makes it available in your own user account's Portainer UI. Helm charts are pulled down from these repos (plus the globally-set Helm repo) and shown in the Create from Manifest screen's Helm charts list.",
+    "globally_set": "Globally-set"
+  },
+  "helm_repo": {
+    "error_create": "Unable to create Helm repository",
+    "error_get": "Unable to get Helm repositories",
+    "error_delete_single": "Unable to delete Helm repository",
+    "error_delete_multiple": "Unable to delete Helm repositories",
+    "create_success": "Helm repository created successfully",
+    "delete_success": "Helm repository deleted successfully",
+    "success": "Success"
+  },
+  "registries": {
+    "title": "Registries",
+    "breadcrumbs": "Registry management",
+    "informationPanelTitle": "Information",
+    "informationPanelDescription": "View registries via an environment to manage access for user(s) and/or team(s)",
+    "actions": "Actions",
+    "manage_access": "Manage access",
+    "name": "Name"
+  },
+  "actions": {
+    "header": "Actions",
+    "browse": "Browse"
+  },
+  "defaultRegistryAction": {
+    "hideForAllUsers": "Hide for all users",
+    "showForAllUsers": "Show for all users",
+    "hideTooltip": "This hides the option in any registry dropdown prompts but does not prevent a user from deploying anonymously from Docker Hub directly via YAML. Note: Docker Hub (anonymous) will continue to show as the ONLY option if there are NO other registries available to the user.",
+    "showTooltip": "This reveals the option in any registry dropdown prompts. (but note that the Docker Hub (anonymous) option only shows if there is no credentialled Docker Hub option available to the user).",
+    "successTitle": "Success",
+    "successMessage": "Default registry Settings updated successfully"
+  },
+  "defaultRegistryDomain": {
+    "docker": "docker.io"
+  },
+  "defaultRegistryName": {
+    "dockerHubAnonymous": "Docker Hub (anonymous)"
+  },
+  "nameCell": {
+    "name": "Name",
+    "URL": "URL",
+    "Actions": "Actions",
+    "authenticationEnabled": "authentication-enabled"
+  },
+  "addButton": {
+    "addRegistry": "Add registry"
+  },
+  "deleteButton": {
+    "successTitle": "Success",
+    "successMessage": "Registries removed",
+    "registry": "registry",
+    "registries": "registries",
+    "confirmMessage": "These {{registriesMsg}} might be used by applications inside one or more environments. Removing the {{registriesMsg}} could lead to a service interruption for the applications using them. Do you want to remove the selected {{registriesMsg}}?"
+  },
+  "registriesDatatable": {
+    "title": "Registries"
+  },
+  "deleteRegistry": {
+    "error": "Unable to delete registries"
+  },
+  "settingsSidebar": {
+    "administration": "Administration",
+    "userRelated": "User-related",
+    "users": "Users",
+    "teams": "Teams",
+    "roles": "Roles",
+    "environmentRelated": "Environment-related",
+    "environments": "Environments",
+    "groups": "Groups",
+    "tags": "Tags",
+    "registries": "Registries",
+    "licenses": "Licenses",
+    "logs": "Logs",
+    "authentication": "Authentication",
+    "activity": "Activity",
+    "notifications": "Notifications",
+    "settings": "Settings",
+    "general": "General",
+    "sharedCredentials": "Shared Credentials",
+    "edgeCompute": "Edge Compute",
+    "help": "Help / About"
+  },
+  "environmentSidebar": {
+    "environment": "Environment",
+    "noneSelected": "None selected",
+    "clearEnvironment": "Clear environment"
+  },
+  "sidebar": {
+    "main": "Main",
+    "home": "Home"
+  },
+  "environments": {
+    "title": "Environments",
+    "description": "Click on an environment to manage",
+    "search_placeholder": "Search by name, group, tag, status, URL...",
+    "refresh": "Refresh",
+    "loading": "Loading...",
+    "no_environments": "No environments available.",
+    "breadcrumbs": "Environment management",
+    "deleteConfirmation": "This action will remove all configurations associated to your environment(s). Continue?",
+    "deleteSuccess": "Environments successfully removed",
+    "manageAccess": "Manage access",
+    "name": "Name",
+    "type": "Type",
+    "url": "URL",
+    "groupName": "Group Name",
+    "dismissError": "Dismiss error (still visible in logs)",
+    "dismissSuccessFully": "Error dismissed successfully"
+  },
+  "environment-types": {
+    "dockerStandalone": {
+      "label": "Docker Standalone",
+      "description": "Connect to Docker Standalone via URL/IP, API or Socket"
+    },
+    "dockerSwarm": {
+      "label": "Docker Swarm",
+      "description": "Connect to Docker Swarm via URL/IP, API or Socket"
+    },
+    "podman": {
+      "label": "Podman",
+      "description": "Connect to Podman via URL/IP or Socket"
+    },
+    "kubernetes": {
+      "label": "Kubernetes",
+      "description": "Connect to a Kubernetes environment via URL/IP"
+    },
+    "aci": {
+      "label": "ACI",
+      "description": "Connect to ACI environment via API"
+    },
+    "kaas": {
+      "label": "Provision KaaS Cluster",
+      "description": "Provision a Kubernetes cluster via a cloud provider's Kubernetes as a Service"
+    },
+    "k8sInstall": {
+      "label": "Create Kubernetes cluster",
+      "description": "Create a Kubernetes cluster on existing infrastructure"
+    },
+    "formTitles": {
+      "dockerStandalone": "Connect to your Docker Standalone environment",
+      "dockerSwarm": "Connect to your Docker Swarm environment",
+      "podman": "Connect to your Podman environment",
+      "kubernetes": "Connect to your Kubernetes environment",
+      "aci": "Connect to your ACI environment",
+      "kaas": "Provision a KaaS environment",
+      "k8sInstall": "Create a Kubernetes cluster"
+    }
+  },
+  "environmentscreationview": {
+    "page_header": {
+      "title": "Quick Setup",
+      "breadcrumbs": "Environment Wizard"
+    },
+    "widget": {
+      "title": "Environment Wizard"
+    },
+    "button": {
+      "previous": "Previous",
+      "next": "Next",
+      "close": "Close"
+    }
+  },
+
+  "socketForm": {
+    "connecting": "Connecting environment...",
+    "connect": "Connect",
+    "successTitle": "Environment created",
+    "overrideLabel": "Override default socket path",
+    "socketPathLabel": "Socket Path",
+    "socketPathTooltip": "Path to the Docker socket. Remember to bind-mount the socket, see the important notice above for more information.",
+    "socketPathPlaceholder": "e.g. /var/run/docker.sock (on Linux) or //./pipe/docker_engine (on Windows)",
+    "validation": {
+      "socketPathRequired": "Socket Path is required when override path is enabled"
+    }
+  },
+  "apiForm": {
+    "label": {
+      "dockerApiUrl": "Docker API URL"
+    },
+    "tooltip": {
+      "dockerApiUrl": "URL or IP address of a Docker host. The Docker API must be exposed over a TCP port. Please refer to the Docker documentation to configure it."
+    },
+    "placeholder": {
+      "dockerApiUrl": "e.g. 10.0.0.10:2375 or mydocker.mydomain.com:2375"
+    },
+    "button": {
+      "loading": "Connecting environment...",
+      "connect": "Connect"
+    },
+    "success": {
+      "title": "Environment created"
+    },
+    "validation": {
+      "urlRequired": "This field is required."
+    }
+  },
+  "deploymentScripts": {
+    "options": {
+      "linux": "Linux",
+      "windows": "Windows"
+    },
+    "tip": "When using the socket, ensure that you have started the Portainer container with the following Docker flag:",
+    "copy": "Copy command"
+  },
+  "portainerUrlField": {
+    "label": "Portainer API server URL",
+    "tooltip": "URL of the Portainer instance that the agent will use to initiate the communications.",
+    "placeholder": "https://portainer.mydomain.tld",
+    "validation": {
+      "required": "API server URL is required",
+      "invalidUrl": "The API server URL must be a valid URL (localhost cannot be used)",
+      "validAPIUrl": "valid API server URL"
+    }
+  },
+  "portainerTunnelAddrField": {
+    "label": "Portainer tunnel server address",
+    "tooltip": "Address of this Portainer instance that will be used by Edge agents to establish a reverse tunnel.",
+    "placeholder": "portainer.mydomain.tld",
+    "validation": {
+      "required": "Tunnel server address is required",
+      "invalidUrl": "The tunnel server address must be a valid address (localhost cannot be used)",
+      "validTunnelUrl": "valid tunnel server URL"
+    }
+  },
+  "moreSettingsSection": {
+    "title": "More settings"
+  },
+  "nameField": {
+    "label": "Name",
+    "placeholder": "e.g. docker-prod01 / kubernetes-cluster01",
+    "validation": {
+      "required": "Name is required",
+      "unique": "Name should be unique"
+    }
+  },
+  "groupField": {
+    "label": "Group"
+  },
+  "metadataFieldset": {
+    "metadata": "Metadata"
+  },
+  "edgeAgentTab": {
+    "addAnotherEnvironment": "Add another environment"
+  },
+  "edgeAgentForm": {
+    "checkinIntervals": "Check-in Intervals",
+    "creatingEnvironment": "Creating environment...",
+    "create": "Create"
+  },
+  "environmentUrlField": {
+    "label": "Environment address",
+    "tooltip": "<HOST>:<PORT> or <IP>:<PORT>",
+    "environmentUrlField.placeholder": "e.g. 10.0.0.10:{{placeholderPort}} or tasks.portainer_agent:{{placeholderPort}}"
+  },
+  "agentForm": {
+    "connectingEnvironment": "Connecting environment...",
+    "connect": "Connect",
+    "successTitle": "Environment created"
+  },
+  "wizardEndpointsList": {
+    "newEnvironments": "New Environments",
+    "url": "URL",
+    "type": "Type"
+  },
+  "searchbar": {
+    "placeholder": "Search...",
+    "aria_label": "Search input"
+  },
+  "environmentsdatatable": {
+    "title": "Environments",
+    "actions": {
+      "remove": "Remove",
+      "auto_onboarding": "Auto onboarding",
+      "add_environment": "Add environment"
+    }
+  },
+  "namecell": {
+    "remove": "Remove",
+    "success": "User removed from team"
+  },
+  "team_members_list": {
+    "title": "Team members",
+    "remove_all": "Remove all users",
+    "success_title": "Success",
+    "success_message": "All users successfully removed"
+  },
+  "hidden_containers_table": {
+    "name": "Name",
+    "value": "Value",
+    "remove": "Remove",
+    "no_filter": "No filter available."
+  },
+  "containers_datatable_actions": {
+    "start": "Start",
+    "stop": "Stop",
+    "kill": "Kill",
+    "restart": "Restart",
+    "pause": "Pause",
+    "resume": "Resume",
+    "remove": "Remove",
+    "add": "Add container"
+  },
+  "images_datatable": {
+    "title": "Images",
+    "remove": "Remove",
+    "force_remove": "Force Remove",
+    "toggle_dropdown": "Toggle Dropdown",
+    "build_new_image": "Build a new image",
+    "import": "Import",
+    "export": "Export",
+    "export_in_progress": "Export in progress..."
+  },
+  "button": {
+    "start": "Start",
+    "stop": "Stop",
+    "restart": "Restart",
+    "resume": "Resume",
+    "remove": "Remove"
+  },
+  "auth": {
+    "internal": {
+      "label": "Internal",
+      "description": "Internal authentication mechanism"
+    },
+    "ldap": {
+      "label": "LDAP",
+      "description": "LDAP authentication"
+    },
+    "ad": {
+      "label": "Microsoft Active Directory",
+      "description": "AD authentication"
+    },
+    "oauth": {
+      "label": "OAuth",
+      "description": "OAuth authentication"
+    }
+  },
+  "oauth": {
+    "microsoft": {
+      "label": "Microsoft",
+      "description": "Microsoft OAuth provider"
+    },
+    "google": {
+      "label": "Google",
+      "description": "Google OAuth provider"
+    },
+    "github": {
+      "label": "Github",
+      "description": "Github OAuth provider"
+    },
+    "custom": {
+      "label": "Custom",
+      "description": "Custom OAuth provider"
+    }
+  },
+  "ldap": {
+    "custom": {
+      "label": "Custom"
+    },
+    "openldap": {
+      "label": "OpenLDAP"
+    }
+  },
+  "environmentBrowseButtons": {
+    "browse_snapshot": "Browse snapshot",
+    "close_snapshot": "Close snapshot",
+    "browse_snapshot_unavailable": "Browse snapshot is only available for async environments",
+    "live_connect": "Live connect",
+    "live_connection_unavailable": "Live connection is not available for async environments",
+    "disconnect": "Disconnect",
+    "connected": "Connected",
+    "disconnected": "Disconnected",
+    "browsing_snapshot": "Browsing Snapshot"
+  },
+  "environment_info": {
+    "title": "Environment info",
+    "environment": "Environment",
+    "url": "URL"
+  },
+  "environment_registries": {
+    "title": "Registries",
+    "list_view": {
+      "title": "Environment registries",
+      "breadcrumbs": "Registry management"
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "breadcrumbs": "Settings",
+    "scheduleAutomaticBackups": "Schedule automatic backups",
+    "cronRule": "Cron rule",
+    "accessKeyID": "Access key ID",
+    "secretAccessKey": "Secret access key",
+    "region": "Region",
+    "regionPlaceholder": "Default region is us-east-1 if left empty",
+    "bucketName": "Bucket name",
+    "s3CompatibleHost": "S3 compatible host",
+    "s3HostTooltip": "Hostname of a S3 service",
+    "s3HostPlaceholder": "Leave empty for AWS S3",
+    "exporting": "Exporting...",
+    "exportBackup": "Export backup",
+    "savingSettings": "Saving settings...",
+    "saveBackupSettings": "Save backup settings",
+    "successTitle": "Success",
+    "exportSuccessMessage": "Exported backup to S3 successfully",
+    "saveSuccessMessage": "S3 backup settings saved successfully",
+    "errors": {
+      "unableToRetrieve": "Unable to retrieve application settings",
+      "unableToUpdate": "Unable to update application settings",
+      "unableToUpdateRegistry": "Unable to update default registry settings"
+    }
+  },
+  "kubeSettings": {
+    "title": "Kubernetes settings",
+    "saving": "Saving",
+    "save": "Save Kubernetes settings",
+    "successTitle": "Success",
+    "successMessage": "Kubernetes settings updated"
+  },
+  "deploymentOptionsSection": {
+    "title": "Deployment options",
+    "enforceCodeDeployment": "Enforce code-based deployment",
+    "enforceCodeDeploymentTooltip": "Hides the 'Add with form' buttons and prevents adding/editing of resources via forms",
+    "allowWebEditor": "Allow web editor and custom template use",
+    "allowManifestUrl": "Allow specifying of a manifest via a URL",
+    "allowEnvOverride": "Allow per environment override",
+    "allowEnvOverrideTooltip": "Allows overriding of deployment options in the Cluster setup screen of each environment",
+    "allowStacksFunctionality": "Allow stacks functionality with Kubernetes environments",
+    "allowStacksFunctionalityTooltip": "This allows you to group your applications/workloads into a single ‘stack’, and then view or delete an entire stack. If disabled, stacks functionality will not show in the UI."
+  },
+
+  "kubeConfigSection": {
+    "title": "Kubeconfig",
+    "label": "Kubeconfig expiry",
+    "options": {
+      "1 day": "1 day",
+      "7 days": "7 days",
+      "30 days": "30 days",
+      "1 year": "1 year",
+      "No expiry": "No expiry"
+    }
+  },
+  "kubeNoteMinimumCharacters": {
+    "requireNote": "Require a note on applications",
+    "tooltip": "Using this will enforce entry of a note in Add/Edit application (and prevent complete clearing of it in Application details).",
+    "minChars": "Minimum number of characters note must have"
+  },
+  "users": {
+    "title": "Users",
+    "breadcrumbs": "User management"
+  },
+  "teams": {
+    "title": "Teams",
+    "breadcrumbs": "Teams management"
+  },
+  "backupSettings": {
+    "title": "Back up Portainer",
+    "sectionTitle": "Backup configuration",
+    "description": "This will back up your Portainer server configuration and does not include containers."
+  },
+  "securityFieldset": {
+    "title": "Security settings",
+    "passwordProtect": "Password Protect",
+    "password": "Password"
+  },
+  "sslSettings": {
+    "title": "SSL certificate",
+    "forceHTTPSWarning": "Forcing HTTPS only will cause Portainer to stop listening on the HTTP port. Any edge agent environment that is using HTTP will no longer be available.",
+    "forceHTTPS": "Force HTTPS only",
+    "provideNewCertificate": "Provide a new SSL Certificate to replace the existing one that is used for HTTPS connections.",
+    "certificateLabel": "SSL/TLS certificate",
+    "certificateTooltip": "Select an X.509 certificate file, commonly a crt, cer or pem file.",
+    "keyLabel": "SSL/TLS private key",
+    "keyTooltip": "Select a private key file, commonly a key, or pem file.",
+    "saveButton": "Save SSL settings",
+    "saving": "Saving",
+    "reloading": "Reloading"
+  },
+  "helmCertPanel": {
+    "title": "Certificate Authority file for Kubernetes Helm repositories",
+    "description": "Provide an additional CA file containing certificate(s) for HTTPS connections to Helm repositories.",
+    "caFileLabel": "CA file",
+    "caFileTooltip": "Select a CA file containing your X.509 certificate(s), commonly a crt, cer or pem file.",
+    "applyChanges": "Apply changes",
+    "loading": "Saving in progress...",
+    "successTitle": "Success",
+    "successMessage": "Helm certificate updated"
+  },
+  "hiddenContainers": {
+    "title": "Hidden containers",
+    "description": "You can hide containers with specific labels from Portainer UI. You need to specify the label name and value.",
+    "successTitle": "Success",
+    "successMessage": "Hidden container settings updated"
+  },
+  "addLabelForm": {
+    "name": "Name",
+    "namePlaceholder": "e.g. com.example.foo",
+    "value": "Value",
+    "valuePlaceholder": "e.g. bar",
+    "addButton": "Add filter",
+    "required": "Name is required"
+  },
+  "backup": {
+    "downloadBackupFile": "Download backup file",
+    "storeInS3": "Store in S3",
+    "defineCronSchedule": "Define a cron schedule",
+    "unableToRetrieveS3Settings": "Unable to retrieve S3 backup settings",
+    "downloadingSettings": "Downloading settings...",
+    "downloadBackup": "Download backup",
+    "downloadedBackupSuccessfully": "Downloaded backup successfully"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "breadcrumbs": "Environment summary",
+    "stack": "Stack",
+    "service": "Service",
+    "container": "Container",
+    "image": "Image",
+    "volume": "Volume",
+    "network": "Network",
+    "gpu": "GPU"
+  },
+  "dashboardItem": {
+    "refreshingTotal": "Refreshing total",
+    "loadingTotal": "Loading total"
+  },
+  "success": "Success",
+  "AUTH": {
+    "LOGIN_TITLE": "Log in to your account",
+    "LOGIN_WELCOME": "Welcome back! Please enter your details",
+    "LOGIN_WITH_MICROSOFT": "Login with Microsoft",
+    "LOGIN_WITH_GOOGLE": "Login with Google",
+    "LOGIN_WITH_GITHUB": "Login with GitHub",
+    "LOGIN_WITH_OAUTH": "Login with OAuth",
+    "OR": "or",
+    "USE_INTERNAL_AUTH": "Use internal authentication",
+    "USERNAME": "Username",
+    "PASSWORD": "Password",
+    "PLACEHOLDER_USERNAME": "Enter your username",
+    "PLACEHOLDER_PASSWORD": "Enter your password",
+    "SHOW_PASSWORD": "Show password",
+    "HIDE_PASSWORD": "Hide password",
+    "LOGIN": "Login",
+    "LOGIN_IN_PROGRESS": "Login in progress...",
+    "AUTH_IN_PROGRESS": "Authentication in progress...",
+    "ERROR": {
+      "LOGIN_FAILURE": "Unable to login",
+      "PUBLIC_SETTINGS_FAILURE": "Unable to retrieve public settings",
+      "RETRIEVE_ENVIRONMENTS": "Unable to retrieve environments",
+      "LOGIN_OAUTH": "Unable to login via OAuth"
+    }
+  },
+  "ROLES": {
+    "ERROR_RETRIEVE": "Unable to retrieve roles",
+    "TITLE": "Roles",
+    "BREADCRUMB": "Role Management",
+    "ENDPOINT_ADMIN": {
+      "NAME": "Environment administrator",
+      "DESCRIPTION": "Full control of all resources in an environment"
+    },
+    "OPERATOR": {
+      "NAME": "Operator",
+      "DESCRIPTION": "Operational Control of all existing resources in an environment"
+    },
+    "HELPDESK": {
+      "NAME": "Helpdesk",
+      "DESCRIPTION": "Read-only access of all resources in an environment"
+    },
+    "READ_ONLY": {
+      "NAME": "Read-only user",
+      "DESCRIPTION": "Read-only access of assigned resources in an environment"
+    },
+    "STANDARD": {
+      "NAME": "Standard user",
+      "DESCRIPTION": "Full control of assigned resources in an environment"
+    }
+  },
+  "ACCESS_VIEWER": {
+    "ERROR_RETRIEVE_ACCESSES": "Unable to retrieve accesses",
+    "ERROR_USER_NOT_FOUND": "User not found",
+    "EFFECTIVE_ACCESS_VIEWER": "Effective Access Viewer",
+    "USER": "User",
+    "NO_USER_AVAILABLE": "No user available",
+    "SELECT_USER": "Select a user"
+  },
+  "TAGS": {
+    "TITLE": "Tags",
+    "BREADCRUMB": "Tag management",
+    "ADD_NEW": "Add a new tag",
+    "NAME_LABEL": "Name",
+    "PLACEHOLDER": "org/acme",
+    "ERROR_REQUIRED": "This field is required.",
+    "ERROR_EXISTS": "This tag already exists.",
+    "CREATE_BUTTON": "Create tag",
+    "CREATING": "Creating tag...",
+    "DELETE_SUCCESS": "Tag successfully removed",
+    "DELETE_ERROR": "Unable to remove tag",
+    "CREATE_SUCCESS": "Tag successfully created",
+    "CREATE_ERROR": "Unable to create tag",
+    "RETRIEVE_ERROR": "Unable to retrieve tags",
+    "FAILURE": "Failure"
+  },
+  "USER_DETAILS": {
+    "TITLE": "User details",
+    "USERS": "Users",
+    "USERNAME_LABEL": "Username",
+    "ADMINISTRATOR_LABEL": "Administrator",
+    "ADMINISTRATOR_TOOLTIP": "Administrators have access to Portainer settings management as well as full control over all defined environments and their resources.",
+    "SAVE_BUTTON": "Save",
+    "DELETE_BUTTON": "Delete this user",
+    "CHANGE_PASSWORD": "Change user password",
+    "NEW_PASSWORD": "New password",
+    "CONFIRM_PASSWORD": "Confirm password",
+    "UPDATE_PASSWORD_BUTTON": "Update password",
+    "DELETE_CONFIRM": "Do you want to remove this user? This user will not be able to login into Portainer anymore.",
+    "CONFIRM_TITLE": "Are you sure?",
+    "CONFIRM_RENAME": "Are you sure you want to rename the user {{oldUsername}} to {{username}}?",
+    "UPDATE_BUTTON": "Update",
+    "UPDATE_SUCCESS": "User successfully updated",
+    "UPDATE_ERROR": "Unable to update user permissions",
+    "PASSWORD_UPDATE_SUCCESS": "Password successfully updated",
+    "PASSWORD_UPDATE_ERROR": "Unable to update user password",
+    "DELETE_SUCCESS": "User successfully deleted",
+    "DELETE_ERROR": "Unable to remove user",
+    "RETRIEVE_ERROR": "Unable to retrieve user information"
+  },
+  "USER_AUTH_LOGS": {
+    "TITLE": "User authentication logs",
+    "BREADCRUMB": "User authentication logs",
+    "DATE_RANGE": "Date range",
+    "RETENTION_INFO": "Portainer user authentication logs have a maximum retention of 7 days.",
+    "EXPORT_CSV": "Export as CSV"
+  },
+  "NOTIFICATIONS": {
+    "SUCCESS": "Success",
+    "FAILURE": "Failure",
+    "LDAP_CONNECTION_SUCCESS": "Connection to LDAP successful",
+    "LDAP_CONNECTION_FAILURE": "Connection to LDAP failed",
+    "AUTH_SETTINGS_UPDATED": "Authentication settings updated",
+    "UNABLE_TO_UPDATE_AUTH_SETTINGS": "Unable to update authentication settings",
+    "UNABLE_TO_RETRIEVE_SETTINGS": "Unable to retrieve application settings"
+  },
+  "SETTINGS": {
+    "AUTH": {
+      "TIMEOUT_OPTIONS": {
+        "ONE_HOUR": "1 hour",
+        "FOUR_HOURS": "4 hours",
+        "EIGHT_HOURS": "8 hours",
+        "TWENTY_FOUR_HOURS": "24 hours",
+        "ONE_WEEK": "1 week",
+        "ONE_MONTH": "1 month",
+        "SIX_MONTHS": "6 months",
+        "ONE_YEAR": "1 year"
+      }
+    },
+    "AUTHENTICATION": {
+      "BREADCRUMB": {
+        "SETTINGS": "Settings",
+        "AUTHENTICATION": "Authentication"
+      },
+      "AUTO_USER_PROVISION": {
+        "TITLE": "Automatic user provisioning",
+        "LABEL": "Automatic user provisioning",
+        "DESCRIPTION": "With automatic user provisioning enabled, Portainer will create user(s) automatically with a standard user role and assign them to team(s) matching LDAP group name(s). If disabled, users must be created in Portainer beforehand."
+      },
+      "LDAP": {
+        "CONNECTIVITY_CHECK": "Connectivity check",
+        "TEST_CONNECTIVITY": "Test connectivity",
+        "TESTING_CONNECTIVITY": "Testing connectivity...",
+        "AUTO_POPULATE_ADMINS": "Auto-populate team admins",
+        "EXTRA_SEARCH_CONFIG": "Extra search configuration",
+        "GROUP_BASE_DN": "Group Base DN",
+        "GROUP_BASE_DN_TOOLTIP": "The distinguished name of the element from which the LDAP server will search for groups.",
+        "GROUP_MEMBERSHIP_ATTRIBUTE": "Group Membership Attribute",
+        "GROUP_MEMBERSHIP_ATTRIBUTE_TOOLTIP": "LDAP attribute which denotes the group membership.",
+        "GROUP_FILTER": "Group Filter",
+        "GROUP_FILTER_TOOLTIP": "The LDAP search filter used to select group elements, optional.",
+        "ADD_GROUP_SEARCH_CONFIG": "Add group search configuration",
+        "FETCH_ADMIN_GROUP": "Fetch Admin Group(s)",
+        "NO_GROUP_FOUND": "No groups found",
+        "GROUP_SEARCH_CONFIGURATIONS": "Group search configurations",
+        "USERS_REMOVAL_SYNC_INFO": "Users removal synchronize between groups and teams only available in",
+        "USERS_REMOVAL_SYNC_TOOLTIP": "Groups allows users to automatically be added to Portainer teams. However, automatically removing users from teams to keep it fully in sync is available in the Business Edition.",
+        "DISPLAY_USER_GROUP_MATCHING": "Display User/Group matching",
+        "DISPLAY_USER_GROUP_MATCHING_DESC": "Show the list of users and groups that match the Portainer search configurations.",
+        "USER_SEARCH_CONFIGURATIONS": "User search configurations",
+        "BASE_DN": "Base DN",
+        "BASE_DN_TOOLTIP": "The distinguished name of the element from which the LDAP server will search for users.",
+        "BASE_DN_PLACEHOLDER": "dc=ldap,dc=domain,dc=tld",
+        "USERNAME_ATTRIBUTE": "Username attribute",
+        "USERNAME_ATTRIBUTE_TOOLTIP": "LDAP attribute which denotes the username.",
+        "USERNAME_ATTRIBUTE_PLACEHOLDER": "uid",
+        "FILTER": "Filter",
+        "FILTER_TOOLTIP": "The LDAP search filter used to select user elements, optional.",
+        "FILTER_PLACEHOLDER": "(objectClass=account)",
+        "ADD_USER_SEARCH_CONFIG": "Add user search configuration",
+        "DISPLAY_USERS": "Display Users",
+        "DISPLAY_USERS_DESC": "Allows you to display users from your LDAP server.",
+        "EXTRA_SEARCH_CONFIGURATION": "Extra search configuration",
+        "GROUP_SEARCH_PATH": "Group Search Path (optional)",
+        "GROUPS": "Groups",
+        "ADD_ANOTHER_GROUP": "Add another group",
+        "OU_NAME": "OU Name",
+        "FOLDER_NAME": "Folder Name",
+        "AUTO_USER_PROVISION_DESCRIPTION": "With automatic user provisioning enabled, Portainer will create user(s) automatically with standard user role and assign them to team(s) which matches to LDAP group name(s). If disabled, users must be created in Portainer beforehand.",
+        "SERVER_TYPE": "Server Type",
+        "INFORMATION_TITLE": "Information",
+        "INFORMATION_DESCRIPTION": "When using LDAP authentication, Portainer will delegate user authentication to an LDAP server and fallback to internal authentication if LDAP authentication fails.",
+        "CONFIGURATION_TITLE": "LDAP configuration",
+        "CONFIGURATION_DESCRIPTION": "You can configure multiple LDAP Servers for authentication fallback. Make sure all servers are using the same configuration (i.e. if TLS is enabled, they should all use the same certificates).",
+        "SERVER_LABEL": "LDAP Server",
+        "SERVER_PLACEHOLDER": "e.g. 10.0.0.10:389 or myldap.domain.tld:389",
+        "ADD_SERVER_BUTTON_HEADING": "Add additional server",
+        "ADD_SERVER_BUTTON_MESSAGE": "Allows you to add an additional LDAP server.",
+        "ADD_SERVER_BUTTON_TEXT": "Add additional server",
+        "ANONYMOUS_MODE_LABEL": "Anonymous mode",
+        "ANONYMOUS_MODE_TOOLTIP": "Enable this option if the server is configured for Anonymous access.",
+        "DN_ENTRIES": "DN entries",
+        "ADD_ANOTHER_ENTRY": "Add another entry",
+        "GROUP_NAME": "Group Name",
+        "PATH_TO_GROUP": "Path to group",
+        "INFORMATION": "Information",
+        "INFO_TEXT": "When using LDAP authentication, Portainer will delegate user authentication to an LDAP server and fallback to internal authentication if LDAP authentication fails.",
+        "CONFIGURATION": "LDAP configuration",
+        "MULTIPLE_SERVER_INFO": "You can configure multiple LDAP Servers for authentication fallback. Make sure all servers are using the same configuration (i.e. if TLS is enabled, they should all use the same certificates).",
+        "SERVER": "LDAP Server",
+        "ADD_SERVER": "Add additional server",
+        "URL_PLACEHOLDER": "e.g. 10.0.0.10:389 or myldap.domain.tld:389",
+        "ANONYMOUS_MODE": "Anonymous mode",
+        "SECURITY": "LDAP security",
+        "USE_STARTTLS": "Use StartTLS",
+        "USE_STARTTLS_TOOLTIP": "Enable this option if you want to use StartTLS to secure the connection to the server. Ignored if Use TLS is selected.",
+        "USE_TLS": "Use TLS",
+        "USE_TLS_TOOLTIP": "Enable this option if you need to specify TLS certificates to connect to the LDAP server.",
+        "SKIP_TLS_VERIFY": "Skip verification of server certificate",
+        "SKIP_TLS_VERIFY_TOOLTIP": "Skip the verification of the server TLS certificate. Not recommended on unsecured networks.",
+        "TLS_CA_CERTIFICATE": "TLS CA certificate",
+        "SELECT_FILE": "Select file",
+        "TEST_LOGIN": "Test login",
+        "USERNAME": "Username",
+        "PASSWORD": "Password",
+        "TEST_BUTTON": "Test",
+        "TESTING": "Testing...",
+        "USER_SEARCH_CONFIG": "User search configurations",
+        "USERNAME_FORMAT": "Username Format",
+        "USER_AT_DOMAIN": "user@domainname",
+        "ROOT_DOMAIN": "Root Domain",
+        "USER_SEARCH_PATH": "User Search Path (optional)",
+        "ALLOWED_GROUPS": "Allowed Groups (optional)",
+        "ADD_GROUP": "add another group",
+        "USER_FILTER": "User Filter",
+        "SERVICE_ACCOUNT_PASSWORD_TOOLTIP": "If you do not enter a password, Portainer will leave the current password unchanged.",
+        "SERVICE_ACCOUNT_TOOLTIP": "Account that will be used to search for users.",
+        "READER_DN": "Reader DN",
+        "READER_DN_PLACEHOLDER": "cn=user,dc=domain,dc=tld",
+        "SECURITY_TITLE": "Connectivity Security",
+        "DOMAIN_ROOT": "Domain root",
+        "AD": {
+          "SECURITY_TITLE": "AD Connectivity Security",
+          "INFORMATION_TITLE": "Information",
+          "INFORMATION_DESCRIPTION": "When using Microsoft AD authentication, Portainer will delegate user authentication to the Domain Controller(s) configured below; if there is no connectivity, Portainer will fallback to internal authentication.",
+          "CONFIG_TITLE": "AD configuration",
+          "CONFIG_DESCRIPTION": "You can configure multiple AD Controllers for authentication fallback. Make sure all servers are using the same configuration (e.g. if TLS is enabled, they should all use the same certificates).",
+          "CONTROLLER": "AD Controller",
+          "ADD_SERVER": "Add additional server",
+          "CONTROLLER_PLACEHOLDER": "e.g. 10.0.0.10:389 or myldap.domain.tld:389",
+          "SERVICE_ACCOUNT": "Service Account",
+          "SERVICE_ACCOUNT_TOOLTIP": "Account that will be used to search for users.",
+          "SERVICE_ACCOUNT_PLACEHOLDER": "reader@domain.tld",
+          "SERVICE_ACCOUNT_PASSWORD": "Service Account Password",
+          "SERVICE_ACCOUNT_PASSWORD_PLACEHOLDER": "password"
+        }
+      },
+      "SSO": {
+        "TITLE": "Single Sign-On",
+        "USE_SSO": "Use SSO",
+        "USE_SSO_TOOLTIP": "When using SSO the OAuth provider is not forced to prompt for credentials.",
+        "HIDE_INTERNAL_AUTH": "Hide internal authentication prompt",
+        "AUTO_USER_PROVISION_DESC": "With automatic user provisioning enabled, Portainer will create user(s) automatically with the standard user role. If disabled, users must be created beforehand in Portainer in order to login.",
+        "AUTO_USER_TEAM_DESC_1": "The users created by the automatic provisioning feature can be added to a default team on creation.",
+        "AUTO_USER_TEAM_DESC_2": "By assigning newly created users to a team, they will be able to access the environments associated with that team. This setting is optional and if not set, newly created users won't be able to access any environments.",
+        "DEFAULT_TEAM": "Default team",
+        "NO_TEAMS": "You have not yet created any teams.",
+        "TEAMS_VIEW": "Teams view",
+        "DEFAULT_TEAM_DISABLED": "The default team option will be disabled when automatic team membership is enabled",
+        "NO_TEAM_OPTION": "No team",
+        "TEAM_MEMBERSHIP_TITLE": "Team membership",
+        "TEAM_MEMBERSHIP_DESCRIPTION": "Automatic team membership synchronizes the team membership based on a custom claim in the token from the OAuth provider.",
+        "AUTO_TEAM_MEMBERSHIP": "Automatic team membership",
+        "CLAIM_NAME": "Claim name",
+        "CLAIM_NAME_TOOLTIP": "The OpenID Connect UserInfo Claim name that contains the team identifier the user belongs to.",
+        "CLAIM_NAME_PLACEHOLDER": "groups",
+        "STATIC_TEAMS": "Statically assigned teams",
+        "ADD_TEAM_MAPPING": "add team mapping",
+        "CLAIM_VALUE_REGEX": "claim value regex",
+        "MAPS_TO": "maps to",
+        "TEAM": "team",
+        "SELECT_TEAM": "Select a team",
+        "CLAIM_VALUE_REQUIRED": "Claim value regex is required.",
+        "DEFAULT_TEAM_DESC": "The default team will be assigned when the user does not belong to any other team."
+      },
+      "TITLE": "Authentication settings",
+      "ACTIONS": "Actions",
+      "SAVE_SETTINGS": "Save settings",
+      "SAVING": "Saving...",
+      "CONFIGURATION": "Configuration",
+      "SESSION_LIFETIME": "Session lifetime",
+      "SESSION_TOOLTIP": "Time before users are forced to relogin.",
+      "SESSION_WARNING": "Changing from default is only recommended if you have additional layers of authentication in front of Portainer.",
+      "METHOD": "Authentication method"
+    },
+    "OAUTH": {
+      "PROVIDER": "Provider",
+      "SINGLE_TITLE": "Single Sign-On",
+      "USE_SSO": "Use SSO",
+      "USE_SSO_TOOLTIP": "When using SSO the OAuth provider is not forced to prompt for credentials.",
+      "HIDE_INTERNAL_AUTH": "Hide internal authentication prompt",
+      "AUTO_USER_PROVISION_DESC": "With automatic user provisioning enabled, Portainer will create user(s) automatically with the standard user role. If disabled, users must be created beforehand in Portainer in order to login.",
+      "AUTO_USER_TEAM_DESC_1": "The users created by the automatic provisioning feature can be added to a default team on creation.",
+      "AUTO_USER_TEAM_DESC_2": "By assigning newly created users to a team, they will be able to access the environments associated to that team. This setting is optional and if not set, newly created users won't be able to access any environments.",
+      "DEFAULT_TEAM": "Default team",
+      "NO_TEAMS": "You have not yet created any teams.",
+      "TEAMS_VIEW": "Teams view",
+      "DEFAULT_TEAM_DISABLED": "The default team option will be disabled when automatic team membership is enabled",
+      "NO_TEAM_OPTION": "No team",
+      "TEAM_MEMBERSHIP_TITLE": "Team membership",
+      "TEAM_MEMBERSHIP_DESCRIPTION": "Automatic team membership synchronizes the team membership based on a custom claim in the token from the OAuth provider.",
+      "AUTO_TEAM_MEMBERSHIP": "Automatic team membership",
+      "CLAIM_NAME": "Claim name",
+      "CLAIM_NAME_TOOLTIP": "The OpenID Connect UserInfo Claim name that contains the team identifier the user belongs to.",
+      "CLAIM_NAME_PLACEHOLDER": "groups",
+      "STATIC_TEAMS": "Statically assigned teams",
+      "ADD_TEAM_MAPPING": "add team mapping",
+      "CLAIM_VALUE_REGEX": "claim value regex",
+      "MAPS_TO": "maps to",
+      "TEAM": "team",
+      "SELECT_TEAM": "Select a team",
+      "CLAIM_VALUE_REQUIRED": "Claim value regex is required.",
+      "DEFAULT_TEAM_DESC": "The default team will be assigned when the user does not belong to any other team",
+      "OAUTH": "OAuth Configuration",
+      "APPLICATION_ID": "Application ID",
+      "CLIENT_ID": "Client ID",
+      "CLIENT_ID_TOOLTIP": "Public identifier of the OAuth application",
+      "CLIENT_ID_PLACEHOLDER": "xxxxxxxxxxxxxxxxxxxx",
+      "APPLICATION_KEY": "Application key",
+      "CLIENT_SECRET": "Client secret",
+      "CLIENT_SECRET_PLACEHOLDER": "xxxxxxxxxxxxxxxxxxxx",
+      "AUTHORIZATION_URL": "Authorization URL",
+      "AUTHORIZATION_URL_TOOLTIP": "URL used to authenticate against the OAuth provider. Will redirect the user to the OAuth provider login view",
+      "AUTHORIZATION_URL_PLACEHOLDER": "https://example.com/oauth/authorize",
+      "ACCESS_TOKEN_URL": "Access token URL",
+      "ACCESS_TOKEN_URL_TOOLTIP": "URL used by Portainer to exchange a valid OAuth authentication code for an access token",
+      "ACCESS_TOKEN_URL_PLACEHOLDER": "https://example.com/oauth/token",
+      "RESOURCE_URL": "Resource URL",
+      "RESOURCE_URL_TOOLTIP": "URL used by Portainer to retrieve information about the authenticated user",
+      "RESOURCE_URL_PLACEHOLDER": "https://example.com/user",
+      "REDIRECT_URL": "Redirect URL",
+      "REDIRECT_URL_TOOLTIP": "URL used by the OAuth provider to redirect the user after successful authentication. Should be set to your Portainer instance URL",
+      "REDIRECT_URL_PLACEHOLDER": "http://yourportainer.com/",
+      "LOGOUT_URL": "Logout URL",
+      "LOGOUT_URL_TOOLTIP": "URL used by Portainer to redirect the user to the OAuth provider in order to log the user out of the identity provider session.",
+      "USER_IDENTIFIER": "User identifier",
+      "USER_IDENTIFIER_TOOLTIP": "Identifier that will be used by Portainer to create an account for the authenticated user. Retrieved from the resource server specified via the Resource URL field",
+      "USER_IDENTIFIER_PLACEHOLDER": "id",
+      "SCOPES": "Scopes",
+      "SCOPES_TOOLTIP": "Scopes required by the OAuth provider to retrieve information about the authenticated user. Refer to your OAuth provider documentation for more information about this",
+      "SCOPES_PLACEHOLDER": "id,email,name",
+      "OAUTH_TITLE": "OAuth Configuratio",
+      "TENANT_ID": "Tenant ID",
+      "TENANT_ID_TOOLTIP": "ID of the Azure Directory you wish to authenticate against. Also known as the Directory ID",
+      "TENANT_ID_PLACEHOLDER": "xxxxxxxxxxxxxxxxxxxx",
+      "CLIENT_SECRET_PLACEHOLDER_PASS": "*******",
+      "OVERRIDE_DEFAULT_CONFIG": "Override default configuration",
+      "USE_DEFAULT_CONFIG": "Use default configuration"
+    }
+  },
+  "USER_THEME": {
+    "TITLE": "User theme"
+  },
+  "USER_SETTINGS": {
+    "TITLE": "User settings",
+    "BREADCRUMB": "User settings",
+    "CHANGE_PASSWORD": "Change user password",
+    "CURRENT_PASSWORD": "Current password",
+    "NEW_PASSWORD": "New password",
+    "CONFIRM_PASSWORD": "Confirm password",
+    "UPDATE_PASSWORD": "Update password",
+    "REMIND_ME_LATER": "Remind me later",
+    "LDAP_WARNING": "You cannot change your password when using LDAP authentication.",
+    "OAUTH_WARNING": "You cannot change your password when using OAuth authentication.",
+    "MINIMUM_PASSWORD_LENGTH": "Minimum password length is set",
+    "HERE": "here."
+  },
+  "THEME": {
+    "LIGHT_THEME": "Light Theme",
+    "LIGHT_THEME_DESCRIPTION": "Default color mode",
+    "DARK_THEME": "Dark Theme",
+    "DARK_THEME_DESCRIPTION": "Dark color mode",
+    "HIGH_CONTRAST": "High Contrast",
+    "HIGH_CONTRAST_DESCRIPTION": "High contrast color mode",
+    "AUTO": "Auto",
+    "AUTO_DESCRIPTION": "Sync with system theme",
+    "SUCCESS_UPDATE_MESSAGE": "User theme settings successfully updated",
+    "ERROR_UPDATE_MESSAGE": "Unable to update user theme settings",
+    "ERROR_GET_USER_MESSAGE": "Unable to get user details"
+  },
+  "HELM_TEMPLATES": {
+    "SEARCH_PLACEHOLDER": "Search...",
+    "SELECT_CATEGORY": "Select a category",
+    "HELM_CHART_SELECTION": "Select the Helm chart to use. Bring further Helm charts into your selection list via",
+    "USER_SETTINGS_HELM_REPOSITORIES": "User settings - Helm repositories",
+    "BETA_FEATURE_MESSAGE": "Beta feature - so far, this functionality has been tested in limited scenarios. For more information, see this <a href='https://www.portainer.io/blog/portainer-now-with-helm-support' target='_blank' class='hyperlink'>blog post on Portainer Helm support</a>.",
+    "NO_HELM_CHARTS_FOUND": "No Helm charts found",
+    "LOADING": "Loading...",
+    "INITIAL_DOWNLOAD_HELM_CHARTS": "Initial download of Helm charts can take a few minutes",
+    "NO_HELM_CHARTS_AVAILABLE": "No Helm charts available"
+  },
+  "CREATE_REGISTRY": "Create registry",
+  "ADD_REGISTRY": "Add registry",
+  "REGISTRIES": "Registries",
+  "REGISTRY_PROVIDER": "Registry provider",
+  "SETTINGS_UPDATE_SUCCESS": "Success",
+  "SETTINGS_UPDATED": "Settings updated",
+  "SETTINGS_UPDATE_FAILURE": "Failure",
+  "SETTINGS_UPDATE_ERROR": "Unable to update settings",
+  "OPEN_AMT_SUCCESS": "Success",
+  "OPEN_AMT_ENABLED": "OpenAMT successfully enabled",
+  "OPEN_AMT_DISABLED": "OpenAMT successfully disabled",
+  "OPEN_AMT_FAILURE": "Failure",
+  "OPEN_AMT_ERROR": "Failed applying changes",
+  "SETTINGS_RETRIEVE_FAILURE": "Failure",
+  "SETTINGS_RETRIEVE_ERROR": "Unable to retrieve application settings",
+  "EDGESETTINGS": "Settings",
+  "EDGE_COMPUTE": "Edge Compute",
+  "STACKS_LIST": "Stacks list",
+  "STACKS": "Stacks",
+  "stack_removed_successfully": "Stack successfully removed",
+  "failure": "Failure",
+  "unable_to_remove_stack": "Unable to remove stack {{stackName}}",
+  "unable_to_retrieve_stacks": "Unable to retrieve stacks",
+  "stack_details": "Stack details",
+  "stack": "Stack",
+  "information": "Information",
+  "stack_created_outside_portainer": "This stack was created outside of Portainer. Control over this stack is limited.",
+  "stack_orphaned_associate_with_environment": "This stack is orphaned. You can re-associate it with the current environment using the 'Associate to this environment' feature.",
+  "start_this_stack": "Start this stack",
+  "stop_this_stack": "Stop this stack",
+  "delete_this_stack": "Delete this stack",
+  "create_template_from_stack": "Create template from stack",
+  "detach_from_git": "Detach from Git",
+  "detachment_in_progress": "Detachment in progress...",
+  "associate_to_this_environment": "Associate to this environment",
+  "reassociate_stack_to_current_environment": "This feature allows you to re-associate this stack to the current environment.",
+  "associate": "Associate",
+  "association_in_progress": "Association in progress...",
+
+  "stack_deployed_using_compose_v2": "This stack will be deployed using the equivalent of docker compose. Only Compose file format version 2 is supported at the moment.",
+  "stack_deployed_using_compose": "This stack will be deployed using docker compose.",
+  "compose_file_format_info": "You can get more information about Compose file format in the",
+  "official_documentation": "official documentation",
+  "stack_editor_placeholder": "Define or paste the content of your docker compose file here",
+  "webhooks": "Webhooks",
+  "webhook_tooltip": "Create a webhook (or callback URI) to automate the update of this stack. Sending a POST request to this callback URI (without requiring any authentication) will pull the most up-to-date version of the associated image and re-deploy this stack.",
+  "create_stack_webhook": "Create a Stack webhook",
+  "options": "Options",
+  "prune_services_tooltip": "Prune services that are no longer referenced.",
+  "prune_services": "Prune services",
+  "update_stack": "Update the stack",
+  "deployment_in_progress": "Deployment in progress...",
+  "services": "Services",
+  "access_control": "Access Control",
+  "stack_successfully_duplicated": "Stack successfully duplicated",
+  "unable_to_duplicate_stack": "Unable to duplicate stack",
+  "confirm_remove_stack": "Do you want to remove the stack? Associated services will be removed as well.",
+  "stack_successfully_removed": "Stack successfully removed",
+  "Unable_to_remove_stack": "Unable to remove stack",
+  "confirm_stack_update": "Do you want to force an update of the stack?",
+  "stack_successfully_deployed": "Stack successfully deployed",
+  "unable_to_create_stack": "Unable to create stack",
+  "confirm_detachment_title": "Are you sure?",
+  "confirm_detachment_message": "Do you want to detach the stack from Git?",
+  "confirm_detachment_button": "Detach",
+  "confirm_migrate_stack_title": "Are you sure?",
+  "confirm_migrate_stack_message": "This action will deploy a new instance of this stack on the target environment, please note that this does NOT relocate the content of any persistent volumes that may be attached to this stack.",
+  "confirm_migrate_stack_button": "Migrate",
+  "stack_migrate_success_title": "Success",
+  "stack_migrate_success_message": "Stack '{{stackName}}' successfully migrated.",
+  "stack_migrate_failure_title": "Failure",
+  "stack_migrate_failure_message": "Unable to migrate stack.",
+  "stack_associate_success_title": "Success",
+  "stack_associate_success_message": "Stack '{{stackName}}' successfully associated.",
+  "stack_associate_failure_title": "Failure",
+  "stack_associate_failure_message": "Unable to associate stack '{{stackName}}'.",
+  "stop_stack_confirm_title": "Are you sure?",
+  "stop_stack_confirm_message": "Are you sure you want to stop this stack?",
+  "stop_stack_confirm_button": "Stop",
+  "stop_stack_success_title": "Success",
+  "stop_stack_success_message": "Stack '{{stackName}}' successfully stopped.",
+  "stop_stack_failure_title": "Failure",
+  "stop_stack_failure_message": "Unable to stop stack.",
+  "start_stack_success_title": "Success",
+  "start_stack_success_message": "Stack '{{stackName}}' successfully started.",
+  "start_stack_failure_title": "Failure",
+  "start_stack_failure_message": "Unable to start stack.",
+  "load_stack_failure_title": "Failure",
+  "load_stack_environments_failure_message": "Unable to retrieve environments.",
+  "load_stack_details_failure_message": "Unable to retrieve stack details.",
+  "load_external_stack_failure_title": "Failure",
+  "load_external_stack_invalid_url": "Invalid type URL parameter.",
+  "load_external_stack_details_failure_message": "Unable to retrieve stack details.",
+  "create_stack": "Create Stack",
+  "stacks": "Stacks",
+  "add_stack": "Add Stack",
+  "name_placeholder": "e.g. mystack",
+  "name_validation_message": "This field must consist of lower case alphanumeric characters, '_' or '-' (e.g. 'my-name', or 'abc-123').",
+  "stack_type_docker_stack": "This stack will be deployed using the equivalent of the docker stack deploy command.",
+  "stack_type_docker_compose_v2": "This stack will be deployed using docker compose. Only Compose file format version 2 is supported at the moment.",
+  "stack_name_standardization_note": "Note: Due to a limitation of libcompose, the name of the stack will be standardized to remove all special characters and uppercase letters.",
+  "stack_type_docker_compose": "This stack will be deployed using docker compose.",
+  "build_method": "Build method",
+  "upload": "Upload",
+  "upload_instructions": "You can upload a Compose file from your computer.",
+  "select_file": "Select file",
+  "template_load_failed_admin": "Custom template could not be loaded, please",
+  "click_here": "click here",
+  "for_configuration": "for configuration",
+  "template_load_failed_contact_admin": "Custom template could not be loaded, please contact your administrator.",
+  "define_or_paste_content_here": "Define or paste the content of your docker compose file here",
+  "more_info_about_compose": "You can get more information about Compose file format in the",
+  "create_webhook_tooltip": "Create a webhook (or callback URI) to automate the update of this stack. Sending a POST request to this callback URI (without requiring any authentication) will pull the most up-to-date version of the associated image and re-deploy this stack.",
+  "deploy_stack": "Deploy the stack",
+  "stack_create_validation_file_empty": "Stack file content must not be empty.",
+  "deployment_error": "Deployment error",
+  "stack_create_success_message": "Stack successfully deployed",
+  "stack_create_error_message": "Unable to deploy stack",
+  "error_template_file_retrieve": "Unable to retrieve Custom Template file",
+  "error_retrieve_containers": "Unable to retrieve Containers",
+  "web_editor": "Web editor",
+  "search_shortcut_windows": "Ctrl+F for search",
+  "search_shortcut_mac": "Cmd+F for search",
+  "editor_shortcut_tooltip_windows": "Ctrl+F - Start searching <br />Ctrl+G - Find next <br />Ctrl+Shift+G - Find previous <br />Ctrl+Shift+F - Replace <br />Ctrl+Shift+R - Replace all <br />Alt+G - Jump to line <br />Alt+F - Persistent search: <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enter - Find next <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shift+Enter - Find previous <br />",
+  "editor_shortcut_tooltip_mac": "Cmd+F - Start searching <br />Cmd+G - Find next <br />Cmd+Shift+G - Find previous <br />Cmd+Option+F - Replace <br />Cmd+Option+R - Replace all <br />Option+G - Jump to line <br />Option+F - Persistent search: <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enter - Find next <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shift+Enter - Find previous <br />",
+  "stack_env_panel": {
+    "explanation": "You may use {{docLink}} in your compose file. The environment variable values set below will be used as substitutions in the compose file. Note that you may also reference a stack.env file in your compose file. A stack.env file contains the environment variables and their values (e.g. TAG=v1.5).",
+    "explanation_link": "environment variables",
+    "alert_title": "stack.env file operation",
+    "alert_repository": "When deploying via Repository, the stack.env file must already reside in the Git repo.",
+    "alert_web_editor": "When deploying via Web editor, Upload, or Custom template deployment, the stack.env file is auto created from what you set below."
+  },
+  "advancedMode": {
+    "simpleModeButton": "Simple mode",
+    "simpleModeTip": "Switch to simple mode to define variables line by line, or load from .env file",
+    "editorPlaceholder": "e.g. key=value"
+  },
+  "environmentVariablesPanel": {
+    "title": "Environment variables",
+    "helpMessage": "Environment changes will not take effect until redeployment occurs manually or via webhook."
+  },
+  "editDetails": {
+    "teamsField": {
+      "authorizedTeams": "Authorized teams",
+      "tooltip": "You can select which team(s) will be able to manage this resource.",
+      "noTeamsMessage": "You have not yet created any teams. Head over to the ",
+      "teamsView": "Teams view",
+      "toManageTeams": "to manage teams."
+    }
+  },
+  "accessControl": {
+    "title": "Access control",
+    "enable": "Enable access control",
+    "tooltip": "When enabled, you can restrict the access and management of this resource.",
+    "authorizedTeams": "Authorized teams",
+    "teamsTooltipAdmin": "You can select which teams(s) will be able to manage this resource.",
+    "teamsTooltipUser": "As you are a member of multiple teams, you can select which teams(s) will be able to manage this resource.",
+    "noTeamsMessage": "You have not yet created any teams. Head over to the",
+    "teamsView": "Teams view",
+    "authorizedUsers": "Authorized users",
+    "usersTooltip": "You can select which user(s) will be able to manage this resource.",
+    "noUsersMessage": "You have not yet created any users. Head over to the",
+    "usersView": "Users view"
+  },
+  "simpleMode": {
+    "advancedMode": "Advanced mode",
+    "advancedModeTip": "Switch to advanced mode to copy & paste multiple variables",
+    "envVariablesList": "Environment variables list",
+    "addEnvVariable": "Add an environment variable",
+    "loadVariablesFromFile": "Load variables from .env file",
+    "fileTooLarge": "File too large! Try uploading a file smaller than 1MB"
+  },
+  "gitForm": {
+    "urlTip": "You can use the URL of a git repository.",
+    "repoUrlLabel": "Repository URL",
+    "refreshButton": "Refresh Git Repository",
+    "repoUrlReq": "Repository URL is required",
+    "gitRepositoryTitle": "Git repository",
+    "skipTLSVerification": "Skip TLS Verification",
+    "skipTLSVerificationTooltip": "Enabling this will allow skipping TLS validation for any self-signed certificate.",
+    "validUrl": "The URL must be a valid URL",
+    "composeFilePathReq": "Compose file path is required",
+    "manifestFilePathReq": "Manifest file path is required",
+    "pathReq": "Path is required",
+    "usernameReq": "Username is required",
+    "passwordReq": "Password is required",
+    "nameReq": "Name is required",
+    "nameUniqueError": "This name is already been used, please try another one",
+    "nameFormatError": "This field must consist of lower case alphanumeric characters, '_' or '-' (e.g. 'my-name', or 'abc-123').",
+    "authentication": "Authentication",
+    "authExplanation": "Enabling authentication will store the credentials and it is advisable to use a git service account",
+    "username": "Username",
+    "usernamePlaceholder": "git username",
+    "personalAccessToken": "Personal Access Token",
+    "tokenTooltip": "Provide a personal access token or password",
+    "passwordPlaceholder": "*******"
+  },
+  "refField": {
+    "specifyReference": "Specify a reference of the repository using the following syntax: branches with",
+    "orTags": "or tags with",
+    "defaultReference": "If not specified, will use the default HEAD reference, normally the main branch.",
+    "repositoryReference": "Repository reference",
+    "repoReferenceRequired": "Repository reference name is required"
+  },
+  "composePathField": {
+    "indicatePath": "Indicate the path to the {{fileType}} file from the root of your repository (requires a yaml, yml, json, or hcl file extension).",
+    "compose": "Compose",
+    "manifest": "Manifest",
+    "dockerStandalone": "To enable rebuilding of an image if already present on Docker standalone environments, include",
+    "inComposeFile": "in your compose file as per",
+    "dockerDocs": "Docker documentation",
+    "composePath": "Compose path",
+    "manifestPath": "Manifest path"
+  },
+  "additionalFileField": {
+    "additionalPaths": "Additional paths",
+    "addFile": "Add file",
+    "path": "Path",
+    "pathPlaceholder": "Enter the file path"
+  },
+  "environmentVariablesFieldset": {
+    "nameRequired": "Environment variable name is required",
+    "duplicateError": "This environment variable is already defined"
+  },
+  "environmentVariableItem": {
+    "name": "Name",
+    "value": "Value",
+    "namePlaceholder": "e.g. FOO",
+    "valuePlaceholder": "e.g. bar"
+  },
+  "useOptions": {
+    "public": {
+      "label": "Public",
+      "description": "I want any user with access to this environment to be able to manage this resource"
+    },
+    "admin": {
+      "administrators": {
+        "label": "Administrators",
+        "description": "I want to restrict the management of this resource to administrators only"
+      },
+      "restricted": {
+        "label": "Restricted",
+        "description": "I want to restrict the management of this resource to a set of users and/or teams"
+      }
+    },
+    "nonAdmin": {
+      "private": {
+        "label": "Private",
+        "description": "I want to restrict this resource to be manageable by myself only"
+      },
+      "restricted": {
+        "label": "Restricted",
+        "singleTeamDescription": "I want any member of my team ({teamName}) to be able to manage this resource",
+        "multipleTeamsDescription": "I want to restrict the management of this resource to one or more of my teams"
+      }
+    }
+  },
+  "boxSelectorOptions": {
+    "editor": {
+      "label": "Web editor"
+    },
+    "upload": {
+      "label": "Upload"
+    },
+    "git": {
+      "label": "Repository"
+    },
+    "edgeStackTemplate": {
+      "label": "Template",
+      "description": "Use an Edge stack app or custom template"
+    },
+    "customTemplate": {
+      "label": "Custom template"
+    },
+    "helm": {
+      "label": "Helm chart"
+    },
+    "url": {
+      "label": "URL"
+    }
+  },
+  "appTemplates": {
+    "title": "Application templates list",
+    "breadcrumbs": "Templates"
+  },
+  "filters": {
+    "categoryPlaceholder": "Category",
+    "categoryAriaLabel": "Category filter",
+    "typePlaceholder": "Type",
+    "typeAriaLabel": "Type filter",
+    "sortByPlaceholder": "Sort By",
+    "sortByAriaLabel": "Sort",
+    "templateType": {
+      "container": "Container",
+      "swarmStack": "Swarm Stack",
+      "composeStack": "Compose Stack"
+    },
+    "templateFields": {
+      "title": "Title",
+      "categories": "Categories",
+      "description": "Description"
+    }
+  },
+  "host_and_filesystem": "Host and filesystem",
+  "host_filesystem_info": "The environment must be",
+  "portainer_agent": "running the Portainer Agent",
+  "use_functionality": "to use this functionality, and the root of the host must be bind-mounted to",
+  "agent_deployment": "in the agent deployment. Check",
+  "more_info": "our documentation",
+  "Host and filesystem": "Host and filesystem",
+  "enable_host_management_features_tooltip": "Enable host management features: host system browsing and advanced host details.",
+
+  "dockerhub": {
+    "1": "For information on how to generate a DockerHub Access Token, follow the",
+    "2": "dockerhub guide"
+  },
+  "aws_ecr": {
+    "1": "For information on how to generate an Access Key, follow the",
+    "2": "AWS guide"
+  },
+  "gitlab": {
+    "1": "For information on how to generate a GitLab Personal Access Token, follow the",
+    "2": "GitLab guide"
+  },
+  "custom": {
+    "1": "Docker requires you to connect to a",
+    "2": "secure registry",
+    "3": "You can find more information about how to connect to an insecure registry",
+    "4": "in the Docker documentation"
+  },
+  "minMaxValue": "Value should be between {{min}} to {{max}}",
+  "helmSection": {
+    "tip": "You can specify the URL to your own Helm repository here. See the",
+    "linkText": "official documentation",
+    "moreDetails": "for more details."
+  },
+  "wizard": {
+    "agent": {
+      "label": "Agent",
+      "description": ""
+    },
+    "api": {
+      "label": "API",
+      "description": ""
+    },
+    "socket": {
+      "label": "Socket",
+      "description": ""
+    },
+    "edgeAgentStandard": {
+      "label": "Edge Agent Standard",
+      "description": ""
+    },
+    "edgeAgentAsync": {
+      "label": "Edge Agent Async",
+      "description": ""
+    },
+    "message": "Only do this once for your environment, regardless of how many nodes are in the cluster. You do not need to add each node as an individual environment in Portainer. Adding just one node (we recommend the manager node) will allow Portainer to manage the entire cluster."
+  },
+  "rolesData": {
+    "endpoint_admin": {
+      "name": "Environment administrator",
+      "description": "Full control of all resources in an environment"
+    },
+    "operator": {
+      "name": "Operator",
+      "description": "Operational Control of all existing resources in an environment"
+    },
+    "helpdesk": {
+      "name": "Helpdesk",
+      "description": "Read-only access of all resources in an environment"
+    },
+    "read_only": {
+      "name": "Read-only user",
+      "description": "Read-only access of assigned resources in an environment"
+    },
+    "standard": {
+      "name": "Standard user",
+      "description": "'Full control of assigned resources in an environment"
+    }
+  },
+  "passwordMinLength": "The password must be at least {{min}} characters long. ({{current}}/{{min}})",
+  "singleTeamDescription": "I want any member of my team ({teamName}) to be able to manage this resource",
+  "environmentUrlField.placeholder": "e.g. 10.0.0.10:{{placeholderPort}} or tasks.portainer_agent:{{placeholderPort}}",
+
+  "helm_repository.admin_description": {
+    "part1": "Adding a Helm repo here only makes it available in your own user account's Portainer UI. Helm charts are pulled down from these repos (plus the",
+    "part2": "globally-set Helm repo",
+    "part3": ") and shown in the Create from Manifest screen's Helm charts list."
+  },
+  "helm_repository.delete_confirm": "Are you sure you want to remove the selected Helm {{count}} {{repository}}?",
+  "helm_repo.delete_success_plural": "{{count}} Helm repositories deleted successfully",
+
+  "dismiss": "dismiss",
+  "SUCCESS": "Success",
+  "FAILURE": "Failure"
+}

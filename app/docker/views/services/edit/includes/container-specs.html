@@ -1,0 +1,52 @@
+<div>
+  <rd-widget>
+    <rd-widget-header icon="list" title-text="{{ 'Container spec' | translate }}"></rd-widget-header>
+    <rd-widget-body classes="no-padding">
+      <table class="!mb-0 table">
+        <tbody>
+          <tr>
+            <td class="w-1/5"> {{ 'CMD' | translate }} </td>
+            <td
+              ><code ng-if="service.Command">{{ service.Command | command }}</code></td
+            >
+            <td>
+              <p class="small text-muted" style="margin-top: 10px"> {{ 'Command to execute.' | translate }} </p>
+            </td>
+          </tr>
+          <tr>
+            <td> {{ 'Args' | translate }} </td>
+            <td
+              ><code ng-if="service.Arguments">{{ service.Arguments }}</code></td
+            >
+            <td>
+              <p class="small text-muted" style="margin-top: 10px"> {{ 'Arguments passed to command in container.' | translate }} </p>
+            </td>
+          </tr>
+          <tr>
+            <td> {{ 'User' | translate }} </td>
+            <td>{{ service.User }}</td>
+            <td>
+              <p class="small text-muted" style="margin-top: 10px"> {{ 'Username or UID.' | translate }} </p>
+            </td>
+          </tr>
+          <tr>
+            <td> {{ 'Working directory' | translate }} </td>
+            <td>{{ service.Dir }}</td>
+            <td>
+              <p class="small text-muted" style="margin-top: 10px"> {{ 'Working directory inside the container.' | translate }} </p>
+            </td>
+          </tr>
+          <tr>
+            <td> {{ 'Stop grace period' | translate }} </td>
+            <td>{{ service.StopGracePeriod }}</td>
+            <td>
+              <p class="small text-muted" style="margin-top: 10px">
+                {{ 'The duration to wait before forcefully terminating a container (default: 10 seconds as defined by the Docker engine).' | translate }}
+              </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </rd-widget-body>
+  </rd-widget>
+</div>
